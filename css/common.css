@@ -76,6 +76,8 @@ body {
 #footer .address {  color:#999; }
 #footer .address > ul >li {float:left; text-align: center;} 
 #footer p { text-align: center; font-size:16px; color:#999; padding-bottom:20px}
+#footer .sns >a:hover >img  { transform: scale(1.2);}
+#footer .address td { text-align: center; margin:0; padding:0; width:0px
 
 
 
