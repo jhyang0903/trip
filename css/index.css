@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* silde 부분 */
+
+#main .silde { height: 759px;   position: relative; overflow: hidden;}
+#main .silde img { width:100%; margin:0; }
+
+#main .silde .text { position:absolute; top:250px; left:350px;} 
+
+
+#main .silde h2 { font-size:60px; }
+#main .silde span { font-size:60px; font-weight: 900;}
+#main .silde p {font-size:18px; padding:50px 0}
+
+#main .silde .des { border:1px solid #000; padding: 16px 40px; font-size:18px; font-weight:normal;  border-radius: 5px;}
+#main .silde .des:hover { background-color: orange; color:#fff;transition: all 0.5s}
+
+/* movie 부분 */
+
+.movie { background-image: url(../img/bg_movie.jpg);
+background-repeat: no-repeat;
+background-size: cover;}
+
+.movie .text1 { float:left; width:48%; padding: 50px 0 80px 0; text-align: center;}
+.movie .text1 h2 { font-size: 38px;font-weight:700;}
+.movie .text1 span { font-size: 38px; font-weight:300;}
+.movie .text1 .dgbox {padding:10px 0}
+.movie .text1  p { color:#686868;padding-bottom: 40px;}
+.movie .text1  .line {border:1px solid black;padding:10px 8px; font-size:18px; padding:18px 40px; display:inline-block; border-radius: 5px;}
+
+.movie .text1 .line:hover { background-color: orange; color:#fff;transition: all 0.5s}
+
+.attachment { background-image: url(../img/bg_customer.jpg);
+height:500px; width:100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+text-align: center;}
+
+.attachment .backdg { position:absolute; top:1300px; left:50%; transform: translateX(-50%); color:#fff;}
+.attachment .backdg p { padding-bottom: 15px;}
+.attachment .backdg p:first-child { font-size:20px;}
+.attachment .backdg p:nth-child(2) {font-size:38px}
+.attachment .backdg p:nth-child(3) { font-size:38px;}
+.attachment .backdg .backbg { padding-bottom:15px ;}
+.attachment .backdg h2 { font-size:54px; padding-bottom:30px}
+.attachment .backdg span { border:1px solid #fff; padding:11px 25px;  border-radius: 5px}
+.attachment .backdg  span:hover { background-color: orange; border-radius: 5px;transition: all 0.5s}
+
+
+/* main news 부분 */
+
+.news  {padding:120px ; position:relative ; }
+.news h2 { padding:20px 0; text-align: center;}
+.news p { padding:20px 0 30px 0;text-align: center}
+.news  tr > td { border-top:1px solid rgb(208, 205, 205); padding:20px 0; width:100% }
+.news  tr > td:last-child { text-align:right}
+.news button { padding: 16px 40px ; border:1px solid black;
+    position:absolute; top:480px ;left:530px; border-radius: 5px;
+}
+.news button:hover { background-color: orange; color:#fff; transition: all 0.5s; }
+
+/* #main poto */
+.poto { height: 400px;}
+.poto1 { float:left; margin: 0 8px }
+.poto1 li {
+    border: 1px solid rgba(0, 0, 0, 0.267)
+}
+.poto .poto1 > li:hover  {transform: scale(1.2); transition: all 0.5s; overflow: hidden;}
+

@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+li {
+    list-style: none;
+}
+
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 해더 구역 */
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+#header h1 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+#header .membership {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    font-size: 11px;
+}
+
+
+
+#nav .depth1>li {
+    float: left;
+    width:13.4555%;
+    padding: 20px 5px;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    color: #000;
+
+}
+
+
+#nav .depth2 {
+    position:absolute; top:70px; left:45px;  
+    font-size: 13px;
+    color: #333;
+    opacity: 0;
+}
+
+
+#header:hover #nav .depth1>li>.depth2{ 
+    height:100px; opacity:1;
+    background-color: #fff;
+}
+#header #nav:hover+.bgbox {
+    height:180px; opacity: 1;
+    }
+
+
+
+/* main 부분 */
+#footer { background-color: #212121; }
+
+#footer .lastback .sns { text-align: center; margin:10px;padding:20px 0; }
+#footer .lastback .sns a { padding-left: 20px;}
+
+
+#footer .address {  color:#999; }
+#footer .address > ul >li {float:left; text-align: center;} 
+#footer p { text-align: center; font-size:16px; color:#999; padding-bottom:20px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
