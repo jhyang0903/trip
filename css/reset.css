@@ -1,6 +1,6 @@
 @charset "utf-8";
 * {padding:0; margin:0; box-sizing:border-box; outline: none;}
-a {text-decoration:none; color:inherit;}
+a {text-decoration:none; color:inherit; display: inline-block;}
 img { max-width:100%; vertical-align:middle;
       border:none;}
 ul { list-style:none;}
@@ -15,8 +15,8 @@ font-size:0; overflow: hidden; text-indent:-9999px;}
 
 fieldset { border:none}
 legend  {display:none}
-input { border:none; background:none;}
-button { border:none; background:none; cursor: pointer;}
+input {   border:none;background:none;}
+button { border:none ;background:none; cursor: pointer;}
 label { display:inline-block;}
 h1 , h2 , h3 , h4 , h5 , h6 ,th , strong { font-weight:normal}
 address, em { font-style:normal;}

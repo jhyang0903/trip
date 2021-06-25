@@ -2,7 +2,7 @@
 
 /* silde 부분 */
 
-#main .silde { height: 759px;   position: relative; overflow: hidden;}
+#main .silde { height: 659px;   position: relative; overflow: hidden;}
 #main .silde img { width:100%; margin:0; }
 
 #main .silde .text { position:absolute; top:250px; left:350px; animation:backInDown 0.6s 0.5s; } 
@@ -17,9 +17,10 @@
 
 /* movie 부분 */
 
-.movie { background-image: url(../img/bg_movie.jpg);
+.movie { background-image: url(../img/bg_movie.jpg); 
 background-repeat: no-repeat;
-background-size: cover;}
+background-size: cover;
+width:100%;}
 
 .movie .text1 { float:left; width:48%; padding: 50px 0 80px 0; text-align: center;}
 .movie .text1 h2 { font-size: 38px;font-weight:700;}
@@ -37,7 +38,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 text-align: center;}
 
-.attachment .backdg { position:absolute; top:1300px; left:50%; transform: translateX(-50%); color:#fff;}
+.attachment .backdg { position:absolute; top:1200px; left:50%; transform: translateX(-50%); color:#fff;}
 .attachment .backdg p { padding-bottom: 15px;}
 .attachment .backdg p:first-child { font-size:20px;}
 .attachment .backdg p:nth-child(2) {font-size:38px}
@@ -62,9 +63,9 @@ text-align: center;}
 
 /* #main poto */
 .poto { height: 400px;}
-.poto1 { float:left; margin: 0 8px }
+.poto1 { float:left; margin: 0 8px ;overflow: hidden;}
 .poto1 li {transition: all 0.5s;
     border: 1px solid rgba(0, 0, 0, 0.267)
 }
-.poto .poto1 > li:hover  {transform: scale(1.2); ; overflow: hidden; }
+.poto .poto1 > li:hover  {transform: scale(0.8); ;  }
 

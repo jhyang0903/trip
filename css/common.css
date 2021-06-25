@@ -17,8 +17,9 @@ body {
 /* 해더 구역 */
 #header {
     width: 100%;
-    position: fixed;
+    position: fixed; top:0; left:0;
     z-index: 999;
+    
 }
 #header h1 {
     position: absolute;
@@ -33,12 +34,12 @@ body {
     font-size: 11px;
 }
 
-
-
+#nav { position:relative; margin-top:20px;}
+/* #nav:hover {background-color: #fff;} */
 #nav .depth1>li {
     float: left;
-    width:13.4555%;
-    padding: 20px 5px;
+    width:16.6666%;
+    padding: 30px 5px;
     font-size: 15px;
     font-weight: 700;
     position: relative;
@@ -46,21 +47,39 @@ body {
     color: #000;
 
 }
+#nav .depth1 > li:hover {color:#f28000;}
+#nav .depth1 > li > a {position: relative;}
+
+#nav .depth1 > li:hover > a::after { left:0%; right:0%; }
+#nav .depth1 > li > a::after {left:50% ; right:50%; transition:all 0.5s ;content: ''; position:absolute; bottom: -8px; height:2px; background: #f28000; }
 
 
 #nav .depth2 {
-    position:absolute; top:70px; left:45px;  
+    position:absolute; top:100%; left:0;
+    width:100%;  
     font-size: 13px;
     color: #333;
     opacity: 0;
+    background-color: #fff;
+    height:0px; overflow: hidden;
+    transition:all 0.5s;
+    z-index: 999;
+    padding:30px 0;
 }
+#nav .depth2 > li { line-height: 20px;} 
 
 
-#header:hover #nav .depth1>li>.depth2{ 
+#header #nav .depth1:hover>li>.depth2{ 
     height:100px; opacity:1;
     background-color: #fff;
 }
-#header #nav:hover+.bgbox {
+#header #nav .depth1 > li > .depth2>li:hover  { color:#f28000;}
+
+
+#header #nav .bgbox {height:0; background-color: #fff; opacity: 0; transition:all 0.5s; position:absolute; top: 100%;
+left:0; width:100%;}
+
+#header #nav .depth1:hover +.bgbox {
     height:180px; opacity: 1;
     }
 
